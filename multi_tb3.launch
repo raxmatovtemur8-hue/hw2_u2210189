@@ -1,0 +1,181 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="gui" value="true"/>
+  </include>
+
+  <group ns="tb3_1">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_1" args="-urdf -model tb3_1 -robot_namespace /tb3_1 -x -17.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_2">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_2" args="-urdf -model tb3_2 -robot_namespace /tb3_2 -x -16.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_3">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_3" args="-urdf -model tb3_3 -robot_namespace /tb3_3 -x -15.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_4">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_4" args="-urdf -model tb3_4 -robot_namespace /tb3_4 -x -14.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_5">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_5" args="-urdf -model tb3_5 -robot_namespace /tb3_5 -x -13.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_6">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_6" args="-urdf -model tb3_6 -robot_namespace /tb3_6 -x -12.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_7">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_7" args="-urdf -model tb3_7 -robot_namespace /tb3_7 -x -11.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_8">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_8" args="-urdf -model tb3_8 -robot_namespace /tb3_8 -x -10.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_9">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_9" args="-urdf -model tb3_9 -robot_namespace /tb3_9 -x -9.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_10">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_10" args="-urdf -model tb3_10 -robot_namespace /tb3_10 -x -8.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_11">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_11" args="-urdf -model tb3_11 -robot_namespace /tb3_11 -x -7.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_12">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_12" args="-urdf -model tb3_12 -robot_namespace /tb3_12 -x -6.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_13">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_13" args="-urdf -model tb3_13 -robot_namespace /tb3_13 -x -5.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_14">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_14" args="-urdf -model tb3_14 -robot_namespace /tb3_14 -x -4.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_15">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_15" args="-urdf -model tb3_15 -robot_namespace /tb3_15 -x -3.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_16">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_16" args="-urdf -model tb3_16 -robot_namespace /tb3_16 -x -2.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_17">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_17" args="-urdf -model tb3_17 -robot_namespace /tb3_17 -x -1.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_18">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_18" args="-urdf -model tb3_18 -robot_namespace /tb3_18 -x 0.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_19">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_19" args="-urdf -model tb3_19 -robot_namespace /tb3_19 -x 1.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_20">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_20" args="-urdf -model tb3_20 -robot_namespace /tb3_20 -x 2.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_21">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_21" args="-urdf -model tb3_21 -robot_namespace /tb3_21 -x 3.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_22">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_22" args="-urdf -model tb3_22 -robot_namespace /tb3_22 -x 4.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_23">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_23" args="-urdf -model tb3_23 -robot_namespace /tb3_23 -x 5.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_24">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_24" args="-urdf -model tb3_24 -robot_namespace /tb3_24 -x 6.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_25">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_25" args="-urdf -model tb3_25 -robot_namespace /tb3_25 -x 7.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_26">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_26" args="-urdf -model tb3_26 -robot_namespace /tb3_26 -x 8.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_27">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_27" args="-urdf -model tb3_27 -robot_namespace /tb3_27 -x 9.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_28">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_28" args="-urdf -model tb3_28 -robot_namespace /tb3_28 -x 10.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_29">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_29" args="-urdf -model tb3_29 -robot_namespace /tb3_29 -x 11.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_30">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_30" args="-urdf -model tb3_30 -robot_namespace /tb3_30 -x 12.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_31">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_31" args="-urdf -model tb3_31 -robot_namespace /tb3_31 -x 13.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_32">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_32" args="-urdf -model tb3_32 -robot_namespace /tb3_32 -x 14.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_33">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_33" args="-urdf -model tb3_33 -robot_namespace /tb3_33 -x 15.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_34">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_34" args="-urdf -model tb3_34 -robot_namespace /tb3_34 -x 16.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+
+  <group ns="tb3_35">
+    <param name="robot_description" command="$(find xacro)/xacro $(find hw2_u2210189)/urdf/turtlebot3_burger.urdf.xacro" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_tb3_35" args="-urdf -model tb3_35 -robot_namespace /tb3_35 -x 17.0 -y -4.0 -z 0.0 -param robot_description"/>
+  </group>
+</launch>
